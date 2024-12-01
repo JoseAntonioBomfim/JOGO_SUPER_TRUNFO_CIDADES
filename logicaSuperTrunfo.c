@@ -40,10 +40,10 @@ int main() {
 
         switch (opcao) {
         case 1:
-            printf("\n***Escolha a opção***\n");
+            printf("\n***Escolha a opcao***\n");
             printf("1. Cadastrar Cartas\n");
             printf("2. Comparar Cartas\n");
-            printf("Insira a opção: ");
+            printf("Insira a opcao: ");
             scanf("%d", &opcao2);
 
             switch (opcao2) {
@@ -83,10 +83,10 @@ int main() {
 
                 for (int i = 0; i < 2; i++) {
                     printf("\n==================================");
-                    printf("\nCódigo Carta: %s", cidade[i].codigoCarta);
+                    printf("\nCodigo Carta: %s", cidade[i].codigoCarta);
                     printf("\nEstado: %s", cidade[i].estado);
                     printf("\nCidade: %s", cidade[i].nomeCidade);
-                    printf("\nPopulação: %.2lf", cidade[i].populacao);
+                    printf("\nPopulacao: %.2lf", cidade[i].populacao);
                     printf("\nÁrea em Km²: %.2lf", cidade[i].areaKm);
                     printf("\nPIB em mil: %.2lf", cidade[i].pib);
                     printf("\nQuantidade de Pontos Turísticos: %d", cidade[i].pontosTuristicos);
@@ -98,19 +98,19 @@ int main() {
 
             case 2:
                 printf("\n***Escolha o que vai comparar***\n");
-                printf("1. Comparar População\n");
-                printf("2. Comparar Área Km²\n");
+                printf("1. Comparar Populacao\n");
+                printf("2. Comparar Area Km²\n");
                 printf("3. Comparar PIB\n");
                 printf("4. Comparar Pontos Turísticos\n");
-                printf("5. Comparar Densidade Demográfica\n");
+                printf("5. Comparar Densidade Demografica\n");
                 printf("6. Comparar PIB Percapita\n");
-                printf("Insira a opção de comparação: ");
+                printf("Insira a opcao de comparacao: ");
                 scanf("%d", &opcao3);
 
                 switch (opcao3) {
                     case 1:
-                        printf("\nPopulação da cidade 1: %.2lf", cidade[0].populacao);
-                        printf("\nPopulação da cidade 2: %.2lf\n", cidade[1].populacao);
+                        printf("\nPopulacao da cidade 1: %.2lf", cidade[0].populacao);
+                        printf("\nPopulacao da cidade 2: %.2lf\n", cidade[1].populacao);
                         if (cidade[0].populacao == cidade[1].populacao) {
                             printf("Empate!\n");
                         } else if (cidade[0].populacao > cidade[1].populacao) {
@@ -120,8 +120,8 @@ int main() {
                         }
                         break;
                     case 2:
-                        printf("\nÁrea Km² da cidade 1: %.2lf", cidade[0].areaKm);
-                        printf("\nÁrea Km² da cidade 2: %.2lf\n", cidade[1].areaKm);
+                        printf("\nArea Km² da cidade 1: %.2lf", cidade[0].areaKm);
+                        printf("\nArea Km² da cidade 2: %.2lf\n", cidade[1].areaKm);
                          if (cidade[0].areaKm == cidade[1].areaKm) {
                             printf("Empate!\n");
                         } else if (cidade[0].areaKm > cidade[1].areaKm) {
@@ -153,8 +153,8 @@ int main() {
                         }
                         break;
                     case 5:
-                        printf("\nDensidade Demográfica da cidade 1: %.2lf", cidade[0].densidadeDemografica);
-                        printf("\nDensidade Demográfica da cidade 2: %.2lf\n", cidade[1].densidadeDemografica);
+                        printf("\nDensidade Demografica da cidade 1: %.2lf", cidade[0].densidadeDemografica);
+                        printf("\nDensidade Demografica da cidade 2: %.2lf\n", cidade[1].densidadeDemografica);
                          if (cidade[0].densidadeDemografica == cidade[1].densidadeDemografica) {
                             printf("Empate!\n");
                         } else if (cidade[0].densidadeDemografica < cidade[1].densidadeDemografica) {
@@ -175,13 +175,13 @@ int main() {
                         }
                         break;
                     default:
-                        printf("Opção Inválida!\n");
+                        printf("Opcao Inválida!\n");
                         break;
                 }
                 break;
 
             default:
-                printf("Opção inválida!\n");
+                printf("Opcao inválida!\n");
                 break;
             }
             break;
@@ -191,7 +191,7 @@ int main() {
             return 0;
 
         default:
-            printf("Opção Inválida!\n");
+            printf("Opção Invalida!\n");
             break;
         }
     }
